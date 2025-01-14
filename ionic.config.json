@@ -1,0 +1,7 @@
+{
+  "name": "item-instance-value-repro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
