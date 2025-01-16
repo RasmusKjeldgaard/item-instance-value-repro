@@ -1,52 +1,53 @@
-import { createHostFactory, SpectatorHost } from '@ngneat/spectator';
-
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
-fdescribe('ItemComponent', () => {
-  let spectator: SpectatorHost<AppComponent>;
-
-  const createHost = createHostFactory({
-    imports: [],
-    component: AppComponent,
+describe('AppComponent', () => {
+  let fixture: ComponentFixture<AppComponent>;
+  let app: AppComponent;
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [AppComponent],
+    }).compileComponents();
+    fixture = TestBed.createComponent(AppComponent);
+    app = fixture.componentInstance;
+  });
+  it('should create the app', async () => {
+    expect(app).toBeTruthy();
   });
 
-  beforeEach(() => {
-    spectator = createHost('<app-root></app-root>');
+  it('should create the app', async () => {
+    expect(app).toBeTruthy();
   });
 
-  it('should create', () => {
-    expect(spectator.component).toBeTruthy();
+  it('should create the app', async () => {
+    expect(app).toBeTruthy();
   });
 
-  it('should create', () => {
-    expect(spectator.component).toBeTruthy();
+  it('should create the app', async () => {
+    expect(app).toBeTruthy();
   });
 
-  it('should create', () => {
-    expect(spectator.component).toBeTruthy();
+  it('should create the app', async () => {
+    expect(app).toBeTruthy();
   });
 
-  it('should create', () => {
-    expect(spectator.component).toBeTruthy();
+  it('should create the app', async () => {
+    expect(app).toBeTruthy();
   });
 
-  it('should create', () => {
-    expect(spectator.component).toBeTruthy();
+  it('should create the app', async () => {
+    expect(app).toBeTruthy();
   });
 
-  it('should create', () => {
-    expect(spectator.component).toBeTruthy();
+  it('should create the app', async () => {
+    expect(app).toBeTruthy();
   });
 
-  it('should create', () => {
-    expect(spectator.component).toBeTruthy();
+  it('should create the app', async () => {
+    expect(app).toBeTruthy();
   });
 
-  it('should create', () => {
-    expect(spectator.component).toBeTruthy();
-  });
-
-  it('should create', () => {
-    expect(spectator.component).toBeTruthy();
+  it('should create the app', async () => {
+    expect(app).toBeTruthy();
   });
 });
