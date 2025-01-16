@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
-import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { IonItem } from '@ionic/angular/standalone';
+
+export enum ItemSize {
+  XS = 'xs',
+  SM = 'sm',
+  MD = 'md',
+}
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html',
-  imports: [IonApp, IonRouterOutlet],
+  template: ` <ion-item></ion-item> `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [IonItem],
 })
-export class AppComponent {
-  constructor() {}
-}
+export class AppComponent {}
